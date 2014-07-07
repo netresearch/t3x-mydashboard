@@ -25,7 +25,9 @@
 *  This copyright notice MUST APPEAR in all copies of the script!
 ***************************************************************/
 
-require_once(PATH_site.'typo3/interfaces/interface.backend_toolbaritem.php');
+if (t3lib_utility_VersionNumber::convertVersionNumberToInteger(TYPO3_version) < 6002000) {
+	require_once(PATH_site.'typo3/interfaces/interface.backend_toolbaritem.php');
+}
 
 class tx_mydashboard_additionalToolbarIcons implements backend_toolbarItem {
 

@@ -28,9 +28,12 @@
 unset($MCONF);
 require_once('conf.php');
 require_once($BACK_PATH.'init.php');
-require_once($BACK_PATH.'template.php');
+if (t3lib_utility_VersionNumber::convertVersionNumberToInteger(TYPO3_version) < 6002000) {
+	require_once($BACK_PATH.'template.php');
+	require_once(PATH_t3lib.'class.t3lib_scbase.php');
+}
 $LANG->includeLLFile('EXT:mydashboard/mod1/locallang.xml');
-require_once(PATH_t3lib.'class.t3lib_scbase.php');
+
 $BE_USER->modAccess($MCONF,1);
 
 
@@ -370,7 +373,7 @@ class tx_mydashboard_module1 extends t3lib_SCbase {
 		$headerSection = 'Hallo <strong>';
 		$headerSection .= (trim($BE_USER->user['realName']))?htmlspecialchars($BE_USER->user['realName']):'<i>No User Name</i>';
 		$headerSection .= ' ('.$BE_USER->user['username'].')</strong> - <i>'.date('F j, Y, g:i a', time()).'</i>';
-		$menu = ($this->currentUserHaveConfigAccess())?t3lib_BEfunc::getFuncMenu($this->id,'SET[function]',$this->MOD_SETTINGS['function'],$this->MOD_MENU['function']):'';
+		$menu = ($this->currentUserHaveConfigAccess())?t3lib_BEfunc::getFuncMenu($this->id,'SET[function]',$this->MOD_SETTINGS['function'],$this->MOD_MENU['function'],'index.php'):'';
 		
 		$moduleContent = $this->moduleContent();
 		
