@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for module &quot;help_txmydashboardM1&quot;</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="title">Dashboard</label>
+			<label index="config">Configuration</label>
+			
+			
+			<label index="config_rows_2">2</label>
+			<label index="config_rows_3">3</label>
+			<label index="config_rows_4">4</label>
+			<label index="config_layout_mediumDoc">Medium</label>
+			<label index="config_layout_bigDoc">Big</label>
+			<label index="config_layout_tx_mydashboard_completeDoc">Complete</label>
+			<label index="config_theme_default">Default</label>
+			
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="title">Dashboard</label>
+			<label index="config">Konfiguration</label>
+		</languageKey>
+	</data>
+</T3locallang>

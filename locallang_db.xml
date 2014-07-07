@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'mydashboard'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="be_users.tx_mydashboard_config">Dashboard Config</label>
+			<label index="be_users.tx_mydashboard_selfadmin">Self Admin</label>
+		</languageKey>
+	</data>
+</T3locallang>

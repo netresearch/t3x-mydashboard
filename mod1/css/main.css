@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+html, body { background-color:#EFEFF4; }
+
+.clearer {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/* Configuration */
+div.widget-select {
+	margin: 0 auto;
+	width: 560px;
+}
+.notice {
+	color: red;
+}
+ul.widget-conf {
+	list-style: none;
+	padding: 4px;
+	margin: 0px;
+	float: left;
+	width: 270px;
+	border: 1px solid #DDDDDD; 
+}
+
+ul.widget-conf li {
+	height: 16px;
+	padding: 2px;
+	clear: both;
+	cursor: pointer;
+}
+
+ul.widget-conf li span.icon {
+	height: 16px;
+	width: 16px;
+	padding: 0px 2px 0px 0px;
+	display: block;
+	float: left;
+}
+ul.widget-conf li span.text {
+	padding: 1px 0px 0px 0px;
+	font-weight: bold;
+	display: block;
+	float: left;
+	line-height: 16px;
+	font-size: 10px;
+}
+
+div.widget h4 {
+	padding: 2px;
+	border: 1px solid #EEE;
+}
+
+/* DB Listing */
+ul.db-listing {
+	padding: 0px 0px 0px 15px;
+	margin: 0px;
+}
+ul.db-listing li {
+	padding: 1px 0px 1px 0px;
+	margin: 0px;
+}

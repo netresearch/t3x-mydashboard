@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Labels for all mydashboard Widgets</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<!-- user stats -->
+			<label index="item_limit">Item Limit</label>
+			<label index="user_timeout_min">Timeout in minutes</label>
+			
+			<!-- rss feed -->
+			<label index="feed_title">RSS Feed title</label>
+			<label index="feed_url">RSS Feed URL</label>
+			<label index="cache_time_h">Cache Timeout in hours</label>
+			<label index="more">more</label>
+			
+			<!-- sys_notepad -->
+			<label index="notes">Notes</label>
+			<label index="notepad">Notepad</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<!-- user stats -->
+			<label index="item_limit">Anzeige Limit</label>
+			<label index="user_timeout_min">Timeout in Minuten</label>
+			
+			<!-- rss feed -->
+			<label index="feed_title">RSS Feed Titel</label>
+			<label index="feed_url">RSS Feed URL</label>
+			<label index="cache_time_h">Cache Timeout in Stunden</label>
+			<label index="more">mehr</label>
+			
+			<!-- sys_notepad -->
+			<label index="notes">Notizen</label>
+			<label index="notepad">Notizblock</label>
+		</languageKey>
+	</data>
+</T3locallang>

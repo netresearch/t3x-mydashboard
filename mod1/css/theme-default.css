@@ -1,0 +1,110 @@
+@charset "UTF-8";
+@import url(main.css);
+
+
+
+/* Widget Default Theme */
+div.widget {
+	border: 1px solid #b9e4b4;
+	padding: 1px;
+	margin: 2px;
+	background-color: white;
+}
+
+div.ajax-update, .ajax-update {
+	border: 1px solid red;
+}
+
+div.widget .content{
+	margin: 2px 3px;
+}
+
+
+div.widget h2 {
+	height: 20px;
+	margin: 3px;
+	clear: both;
+	background: #fff url(../img/headline-back-02.png) top right no-repeat;
+}
+
+div.widget h2 span.icon {
+	height: 20px;
+	width: 16px;
+	padding: 2px 2px 0px 4px;
+	display: block;
+	float: left;
+	background: transparent url(../img/headline-back-01.png) top left no-repeat;
+}
+div.widget h2 span.text {
+	padding: 2px 0px 0px 0px;
+	font-weight: bold;
+	display: block;
+	float: left;
+	line-height: 16px;
+	font-size: 10px;
+	cursor: pointer;
+}
+
+div.widget h2 a {
+	display: block;
+	height: 16px;
+	width: 16px;
+	float: right;
+	margin-right: 1px;
+	text-indent: -9999px;
+}
+
+div.widget h2 a.config {
+	padding: 2px 0px 0px 0px;
+	background: url(../img/default_config.png) 0px 2px no-repeat;
+}
+div.widget h2 a.refresh {
+	padding: 2px 0px 0px 0px;
+	background: url(../img/default_refresh.png) 0px 2px no-repeat;
+}
+div.widget h2 a.delete {
+	padding: 2px 0px 0px 0px;
+	background: url(../img/default_delete.png) 0px 2px no-repeat;
+}
+
+/* Layout */
+div.widgets {
+}
+div.container-rows-2 {
+	float: left;
+	width: 50%;
+	padding-bottom: 10px;
+}
+div.container-rows-3 {
+	float: left;
+	width: 33.33%;
+	padding-bottom: 10px;
+}
+div.container-rows-4 {
+	float: left;
+	width: 25%;
+	padding-bottom: 10px;
+}
+
+/* RSS Boxen */
+ul.rssfeed {
+	list-style:none;
+	padding:4px 0px 0px 0px;
+	margin:0px;
+	background-color: white;
+}
+ul.rssfeed li h3 {
+	cursor: pointer;
+	padding:3px 0px;
+	margin:0px;
+	background-color: white;
+}
+ul.rssfeed li span.content {
+	display:block;
+	overflow:hidden;
+	background-color: white;
+}
+ul.rssfeed li span.more a {
+	font-weight: bold;
+	background-color: white;
+}
