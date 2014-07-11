@@ -350,7 +350,7 @@ class tx_mydashboard_module1 extends t3lib_SCbase {
 		
 		// required for the widgets
 		$this->doc->loadJavascriptLib('contrib/prototype/prototype.js');
-		$this->doc->loadJavascriptLib('contrib/scriptaculous/scriptaculous.js?load=builder,effects,dragdrop,controls,slider');
+		$this->doc->getPageRenderer()->loadScriptaculous('effects,dragdrop');
 		$this->doc->loadJavascriptLib(t3lib_extMgm::extRelPath('mydashboard').'mod1/functions.js');
 		
 		
