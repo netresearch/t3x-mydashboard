@@ -172,6 +172,15 @@ class tx_mydashboard_template {
 				case 'string':
 					$c .= '<input type="input" name="'.$key.'" value="'.$this->getConfigVar($key).'" />';
 					break;
+				case 'select':
+					$c .= '<select name="'.$key.'">';
+					foreach ($conf['options'] as $optionKey => $value) {
+						$c .= '<option '
+							. ($this->getConfigVar($key) === $optionKey ? 'selected="selected"':'')
+							. ' value="'.htmlspecialchars($optionKey).'">' . htmlspecialchars($value) . '</option>';
+					}
+					$c .= '</select>';
+					break;
 				case 'boolean':
 					$c .= '<input type="radio" name="'.$key.'" value="true" '.($this->getConfigVar($key)?'checked="checked" ':'').' /> On
 					<input type="radio" name="'.$key.'" value="false" '.(!$this->getConfigVar($key)?'checked="checked" ':'').' /> Off
